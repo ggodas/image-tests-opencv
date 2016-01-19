@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "519B9A8715E08C5CFB4174728A4EC426CD796E45",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "DB9D0698FA5F0361D3C1F3B6F746C79EE24D591B" : 0,
+    "519B9A8715E08C5CFB4174728A4EC426CD796E45" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E271A83F-7064-47C3-800F-9DC0921445E7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "DB9D0698FA5F0361D3C1F3B6F746C79EE24D591B" : "opencv_contrib\/",
+    "519B9A8715E08C5CFB4174728A4EC426CD796E45" : "EraseLine\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "EraseLine",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "EraseLine.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:ggodas\/image-tests-opencv.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "519B9A8715E08C5CFB4174728A4EC426CD796E45"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Itseez\/opencv_contrib.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DB9D0698FA5F0361D3C1F3B6F746C79EE24D591B"
+    }
+  ]
+}
