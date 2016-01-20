@@ -170,9 +170,9 @@ void find_horizontal_lines(const char* filename, const char* output){
 }
 
 int main(int argc, const char * argv[]) {
-    Mat src = cv::imread(argv[1], 0);
+    Mat src = cv::imread(argv[1]);
 
     appy_k_means(src);
-    find_horizontal_lines(argv[1], argv[2]);
+    //find_horizontal_lines(argv[1], argv[2]);
     return 0;
 }
