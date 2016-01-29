@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E40D06911C593316009BF65A /* lettersDetection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E40D068F1C593316009BF65A /* lettersDetection.cpp */; };
+		E40D06971C593876009BF65A /* skewImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E40D06951C593876009BF65A /* skewImage.cpp */; };
+		E40D069A1C593E93009BF65A /* eraseLine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E40D06981C593E93009BF65A /* eraseLine.cpp */; };
+		E40D069D1C59401F009BF65A /* houghLinesTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E40D069B1C59401F009BF65A /* houghLinesTests.cpp */; };
+		E40D06A01C594215009BF65A /* extractVerticalAndHorizontal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E40D069E1C594215009BF65A /* extractVerticalAndHorizontal.cpp */; };
+		E40D06A31C594444009BF65A /* prepareImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E40D06A11C594444009BF65A /* prepareImage.cpp */; };
 		E40DDDBD1B740B5E006440DA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E40DDDBC1B740B5E006440DA /* main.cpp */; };
 		E40F3BB41C4EC4D9002A8AC6 /* FindEdges.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E40F3BB21C4EC4D9002A8AC6 /* FindEdges.cpp */; };
 		E4579D671B74138F0052EFA1 /* libopencv_core.2.4.11.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E4579D661B74138F0052EFA1 /* libopencv_core.2.4.11.dylib */; };
@@ -42,6 +48,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E40D068F1C593316009BF65A /* lettersDetection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lettersDetection.cpp; sourceTree = "<group>"; };
+		E40D06901C593316009BF65A /* lettersDetection.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = lettersDetection.hpp; sourceTree = "<group>"; };
+		E40D06951C593876009BF65A /* skewImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = skewImage.cpp; sourceTree = "<group>"; };
+		E40D06961C593876009BF65A /* skewImage.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = skewImage.hpp; sourceTree = "<group>"; };
+		E40D06981C593E93009BF65A /* eraseLine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = eraseLine.cpp; sourceTree = "<group>"; };
+		E40D06991C593E93009BF65A /* eraseLine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = eraseLine.hpp; sourceTree = "<group>"; };
+		E40D069B1C59401F009BF65A /* houghLinesTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = houghLinesTests.cpp; sourceTree = "<group>"; };
+		E40D069C1C59401F009BF65A /* houghLinesTests.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = houghLinesTests.hpp; sourceTree = "<group>"; };
+		E40D069E1C594215009BF65A /* extractVerticalAndHorizontal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = extractVerticalAndHorizontal.cpp; sourceTree = "<group>"; };
+		E40D069F1C594215009BF65A /* extractVerticalAndHorizontal.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = extractVerticalAndHorizontal.hpp; sourceTree = "<group>"; };
+		E40D06A11C594444009BF65A /* prepareImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = prepareImage.cpp; sourceTree = "<group>"; };
+		E40D06A21C594444009BF65A /* prepareImage.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = prepareImage.hpp; sourceTree = "<group>"; };
 		E40DDDB91B740B5E006440DA /* EraseLine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EraseLine; sourceTree = BUILT_PRODUCTS_DIR; };
 		E40DDDBC1B740B5E006440DA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		E40F3BB21C4EC4D9002A8AC6 /* FindEdges.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FindEdges.cpp; sourceTree = "<group>"; };
@@ -135,6 +153,18 @@
 				E40DDDBC1B740B5E006440DA /* main.cpp */,
 				E40F3BB21C4EC4D9002A8AC6 /* FindEdges.cpp */,
 				E40F3BB31C4EC4D9002A8AC6 /* FindEdges.hpp */,
+				E40D068F1C593316009BF65A /* lettersDetection.cpp */,
+				E40D06901C593316009BF65A /* lettersDetection.hpp */,
+				E40D06951C593876009BF65A /* skewImage.cpp */,
+				E40D06961C593876009BF65A /* skewImage.hpp */,
+				E40D06981C593E93009BF65A /* eraseLine.cpp */,
+				E40D06991C593E93009BF65A /* eraseLine.hpp */,
+				E40D069B1C59401F009BF65A /* houghLinesTests.cpp */,
+				E40D069C1C59401F009BF65A /* houghLinesTests.hpp */,
+				E40D069E1C594215009BF65A /* extractVerticalAndHorizontal.cpp */,
+				E40D069F1C594215009BF65A /* extractVerticalAndHorizontal.hpp */,
+				E40D06A11C594444009BF65A /* prepareImage.cpp */,
+				E40D06A21C594444009BF65A /* prepareImage.hpp */,
 			);
 			path = EraseLine;
 			sourceTree = "<group>";
@@ -195,8 +225,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E40D069A1C593E93009BF65A /* eraseLine.cpp in Sources */,
+				E40D06A01C594215009BF65A /* extractVerticalAndHorizontal.cpp in Sources */,
+				E40D069D1C59401F009BF65A /* houghLinesTests.cpp in Sources */,
+				E40D06A31C594444009BF65A /* prepareImage.cpp in Sources */,
+				E40D06911C593316009BF65A /* lettersDetection.cpp in Sources */,
 				E40DDDBD1B740B5E006440DA /* main.cpp in Sources */,
 				E40F3BB41C4EC4D9002A8AC6 /* FindEdges.cpp in Sources */,
+				E40D06971C593876009BF65A /* skewImage.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

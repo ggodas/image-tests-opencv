@@ -8,7 +8,9 @@
 
 #include "FindEdges.hpp"
 #include <iostream>
-#include <cmath>
+#include <math.h>
+
+//#include <cmath>
 
 using namespace cv;
 using namespace std;
@@ -57,8 +59,7 @@ void appy_k_means(cv::Mat src){
     
     int lenght = (src.rows * src.cols);
     cv::Mat samples(lenght, 3, CV_32F);
-    cv::imwrite("/Users/georgegodas/Downloads/vazio.jpg", samples);
-
+    cv::imshow("Original", src);
     for (int y = 0; y < src.rows; y++) {
         for (int x = 0; x < src.cols; x++) {
             for (int z = 0; z < 3; z++) {
@@ -110,11 +111,21 @@ void appy_k_means(cv::Mat src){
     } else {
         srcGray = src;
     }
-    cv::Canny(srcGray, srcGray, 50, 100);
+    //cv::Canny(srcGray, srcGray, 10, 100);
+    
+    Mat canny, dst;
+    //resize(src, dst, Size(1024 /2, 768/2), 0, 0, INTER_CUBIC); // resize to 1024x768 resolution
+    dst = src;
+    adaptiveThreshold(srcGray, dst, 255, CV_ADAPTIVE_THRESH_GAUSSIAN_C, THRESH_BINARY, 11, 2);
+    cv::Canny(dst, canny, 200, 250);
+    cv::imshow("Canny", canny);
+    
+    waitKey();
+
     vector<vector<Point> > contours;
 
-    cv::findContours(srcGray, contours, hierarchy, CV_RETR_TREE, CV_CHAIN_APPROX_SIMPLE);
-    cv::imshow("contours", srcGray);
+    cv::findContours(canny, contours, hierarchy, CV_RETR_TREE, CV_CHAIN_APPROX_SIMPLE);
+    cv::imshow("contours", canny);
 
     
     
@@ -130,25 +141,37 @@ void appy_k_means(cv::Mat src){
     }
     
     cv::Mat drawing = cv::Mat::zeros(srcRes.size(), CV_8UC1);
+    cv::Mat drawLines = cv::Mat::zeros(srcRes.size(), CV_8UC1);
     
     cv:drawContours(drawing, contours, -1, Scalar(255));
     
-    cv::imshow("ver", drawing);
-    cv::waitKey();
 
     
     //vector<Vec4i> lines;
-    Mat lines;
+    vector<Vec4i> lines;
+
+    //Mat lines;
     vector<Point> corners;
     
-    HoughLinesP(drawing, lines, 1, M_PI/180, 70, 30, 10);
+    HoughLinesP(drawing, lines, 1, CV_PI/180, 50, 20, 20);
     
+    for(size_t i = 0; i < lines.size(); i++ )
+    {
+        cv::line(src, Point(lines[i][0], lines[i][1]),
+             Point(lines[i][2], lines[i][3]), Scalar(0,255,0), 3, 8 );
+    }
+    
+    cv::imshow("Linhas", src);
+    
+    cv::waitKey();
+/*
     for(int i = 0; i < lines.cols; i++){
         for (int j = i + 1; j < lines.cols; j++) {
             Vec3b line1 = lines.at<Vec3b>(Point(0, i));
             Vec3b line2 = lines.at<Vec3b>(Point(0, j));
-            
+
             Point pt = findIntersetctions(line1, line2);
+            
             if (pt.x > 0 && pt.y >= 0 && pt.x <= drawing.cols && pt.y <= drawing.rows) {
                 if (!exists(corners, pt)) {
                     corners.push_back(pt);
@@ -160,7 +183,7 @@ void appy_k_means(cv::Mat src){
     if(corners.size() != 4){
         char* errorMessage = "Nao detectei a borda";
     }
-    
+*/
     
     
     cv::imwrite("/Users/georgegodas/Downloads/bla.jpg", drawing);

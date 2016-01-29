@@ -1,5 +1,6 @@
 dependencies: \
-  /Users/georgegodas/Documents/Projetos/EraseLine/EraseLine/main.cpp \
+  /Users/georgegodas/Documents/Projetos/EraseLine/EraseLine/extractVerticalAndHorizontal.cpp \
+  /Users/georgegodas/Documents/Projetos/EraseLine/EraseLine/extractVerticalAndHorizontal.hpp \
   /usr/local/include/opencv2/opencv.hpp \
   /usr/local/include/opencv2/core/core_c.h \
   /usr/local/include/opencv2/core/types_c.h \
@@ -27,5 +28,4 @@ dependencies: \
   /usr/local/include/opencv2/highgui/highgui.hpp \
   /usr/local/include/opencv2/contrib/contrib.hpp \
   /usr/local/include/opencv2/contrib/retina.hpp \
-  /usr/local/include/opencv2/contrib/openfabmap.hpp \
-  /Users/georgegodas/Documents/Projetos/EraseLine/EraseLine/houghLinesTests.hpp
+  /usr/local/include/opencv2/contrib/openfabmap.hpp
